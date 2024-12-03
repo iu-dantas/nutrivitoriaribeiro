@@ -14,8 +14,9 @@ html a {
     color: inherit; 
 }
 
-body {
-    overflow-x: hidden;
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 
@@ -427,6 +428,7 @@ header {
     position: absolute;
     z-index: 1;
     transform: rotate(5deg);
+    max-width: 100%;
 }
 
 .contato {
@@ -499,6 +501,11 @@ header {
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 300;
+}
+
+.contact-form option {
+    text-decoration: none;
+    color: #000;
 }
 
 .contact-form h2 {
@@ -796,6 +803,7 @@ article {
     position: absolute;
     z-index: 1;
     transform: rotate(45deg);
+    max-width: 100%
 }
 
 .sobre-text {
@@ -1177,7 +1185,7 @@ margin: 0.5rem;
     position: absolute;
     z-index: 1;
     transform: rotate(45deg);
-    width: 100%;
+    max-width: 100%
 }
 
 .sobre-text {
