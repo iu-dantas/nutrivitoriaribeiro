@@ -1,0 +1,1323 @@
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+main {
+    background-color: #E9FFC7;
+}
+
+html a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+:root {
+    --primary-color: #F7B1A9;
+    --secondary-color: #E9FFC7;
+    --highlight-color: #F6D73C;
+    --text-color: #000;
+    --bg-light: #FBFFF5;
+    --bg-medium: #F7B1A9;
+    --white-color: #fff;
+}
+
+@media (min-width: 1024px) { 
+    header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+/* Geral do header */
+header {
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-brand img {
+    max-width: 200px;
+    margin-right: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 2rem; 
+    font-family: Akshar, sans-serif;
+    font-size: 2rem;
+    justify-content: center; 
+    margin: 0 auto; 
+}
+
+.nav-item a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.nav-item a:hover {
+    color: #F7B1A9;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.socials a {
+    color: #F7B1A9;
+}
+
+.socials a:hover {
+    color: #000; 
+}
+
+/* Herosection */
+.herosection {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    font-family: Akshar;
+    font-size: 2rem;
+    margin: 0 auto; 
+    padding: 2rem;
+}
+
+/* Herosection - Texto */
+.herosection-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    max-width: 50%; 
+    padding-right: 2rem; 
+}
+
+.highlight {
+    background-color: #F7B1A9;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.herosection h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.herosection h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.herosection p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.btn-home {
+    border-radius: 0.5rem;
+    border: 0.1rem solid #F6D73C;
+    background: rgba(248, 224, 104, 0.80);
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+    background-color: #F6D73C;
+}
+
+.btn-home a {
+    text-decoration: none;
+    color: black;
+}
+
+.herosection-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+.herosection-img img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container-serv {
+    margin: 3rem auto;
+    max-width: 1200px; /* Limita a largura máxima */
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas maiores */
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2.1rem;
+    grid-row-gap: 2.1rem;
+}
+
+.service1 { grid-area: 1 / 1 / 2 / 2; }
+.service2 { grid-area: 2 / 1 / 3 / 2; }
+.service3 { grid-area: 1 / 2 / 3 / 3; }
+.service4 { grid-area: 1 / 3 / 2 / 4; }
+.service5 { grid-area: 2 / 3 / 3 / 4; }
+
+.services {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    overflow: hidden; 
+    border-radius: 3rem;
+    color: #FFF;
+    font-family: Akshar, sans-serif;
+    font-size: 2.5rem;
+    line-height: normal;
+    z-index: 3; 
+    border: none;
+    height: 27rem;
+}
+
+.service3 {
+    height: 57rem;
+}
+
+.services a {
+    position: relative;
+    z-index: 3; /* Coloca o texto acima da imagem de fundo e da imagem principal */
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+.service-title {
+    font-size: 3rem; /* Ajuste conforme necessário */
+    margin: 0rem 0 1rem 0; /* Margem inferior para espaçamento */
+    text-align: left; /* Centraliza o texto */
+}
+
+.service3 .service-title {
+    font-size: 4rem;
+}
+
+.service-container1, .service-container2, .service-container3, .service-container4, .service-container5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Centraliza os itens dentro do container */
+    text-align: left; /* Centraliza o texto */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+
+.service1 { background: #FCC05E; }
+.service2 { background: #F8E068; }
+.service3 { background: #dcfcad; color: #000; }
+.service4 { background: #5F84F3; }
+.service5 { background: #F7B1A9; }
+
+.background-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.service-container1 img, .service-container2 img, .service-container3 img, .service-container4 img, .service-container5 img {
+    position: absolute;
+}
+
+.service-container1 img { top: 9rem; }
+.service-container2 img { width: 15rem; top: 5rem; }
+.service-container3 img { width: 360px; top: 35rem; left: 0rem;}
+.service-container4 img { width: 15rem; top: 5rem; }
+.service-container5 img { width: 15rem; top: 8rem; left: 20rem;}
+
+/* Ajuste para o texto dentro do container */
+.services .service-container1::after {
+    content: "Se você está buscando um estilo de vida mais saudável para você e seu pequeno, você veio ao lugar certo! Vamos abordar tudo sobre nutrição materno-infantil, de forma descontraída e personalizada. Sessões de 45 minutos focadas em você e seu bebê!";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+    text-align: justify;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    width: 90%;  /* Ajusta a largura para não ficar tão apertado */
+    white-space: normal; /* Permite que o texto quebre em várias linhas */
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas para melhorar a legibilidade */
+    padding: 0 1rem; /* Espaçamento horizontal para evitar que o texto encoste nas bordas */
+    max-width: 400px; /* Limita a largura do texto para que ele não se espalhe muito */
+}
+
+/* Texto para Consulta Nutricional */
+.services .service-container2::after {
+    content: "Consultas completas e personalizadas para atender às necessidades nutricionais específicas de cada cliente. Juntos, criaremos estratégias para atingir seus objetivos";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -33%);
+    color: #fff;
+    font-size: 2rem;
+    text-align: left;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    width: 90%;
+    white-space: normal;
+    line-height: 1.5;
+    padding: 0 1rem;
+    max-width: 400px;
+}
+
+/* Texto para Programa de Orientação Nutricional */
+.services .service-container3::after {
+    content: "Oferecemos assessoria educacional em nutrição para escolas, com foco em promover hábitos saudáveis. Através de workshops interativos e materiais lúdicos, proporcionamos uma experiência prática e educativa para alunos e educadores, incentivando a alimentação saudável no cotidiano.";
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 2rem;
+    text-align: justify;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    width: 90%;
+    white-space: normal;
+    line-height: 1.5;
+    padding: 0 1rem;
+    max-width: 400px;
+}
+
+/* Texto para Programa de Acompanhamento Nutricional */
+.services .service-container4::after {
+    content: "Programas desenhados para orientar você ao longo de sua jornada nutricional, com planos práticos e suporte contínuo.";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+    text-align: justify;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    width: 90%;
+    white-space: normal;
+    line-height: 1.5;
+    padding: 0 1rem;
+    max-width: 400px;
+}
+
+/* Texto para Programa de Acompanhamento Nutricional (Investimento) */
+.services .service-container5::after {
+    content: "Acompanhamento completo para garantir a evolução nutricional, ajustando estratégias conforme necessário para atingir seus objetivos de maneira eficaz.";
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+    text-align: justify;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    width: 90%;
+    white-space: normal;
+    line-height: 1.5;
+    padding: 0 1rem;
+    max-width: 400px;
+}
+
+/* Exibe o texto quando o hover ocorre */
+.services:hover .service-container1::after,
+.services:hover .service-container2::after,
+.services:hover .service-container3::after,
+.services:hover .service-container4::after,
+.services:hover .service-container5::after {
+    opacity: 1;
+}
+
+/* Desaparecimento suave de imagens e título */
+.services:hover .background-img img, 
+.services:hover .service-img,
+.services:hover .service-title {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+
+
+
+.sobre-mim {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7B1A9;
+    font-family: Akshar;
+    gap: 2rem;
+}
+
+.sobrem {
+    max-width: 1200px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.sobre-img {
+    width: 40rem;
+    z-index: 2;
+}
+
+.sobre-text {
+    z-index: 3;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    background: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(13.5px);
+    padding: 2rem;
+}
+
+.sobre-text h1 {
+    font-size: 3rem;
+}
+
+.sobre-text p {
+    font-size: 2rem;
+    width: 60rem;
+}
+
+.sobrebackground-img {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(5deg);
+}
+
+.contato {
+    max-width: 1200px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Akshar;
+    gap: 5rem;
+}
+
+.wpp-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-contato {
+    width: 20rem;
+    margin: 1rem;
+}
+
+.wpp-area h1{
+    font-size: 3rem;
+}
+
+.wpp-area p{
+    font-size: 2rem;
+}
+
+.btn-wpp {
+    border-radius: 10px;
+    background: #7ECC00;
+    height: 5rem;
+    padding: 1rem;
+    color: #FFF;
+    font-family: Akshar;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+}
+
+.btn-wpp i {
+    margin-right: 0.5rem;
+}
+
+.btn-wpp:hover {
+    background-color: #74a724;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+        width: 100%;
+    max-width: 60rem;
+    height: auto;
+    background-color: #F7B1A9;
+    stroke-width: 0.2rem;
+    stroke: #E9FFC7;
+    border-radius: 2rem;
+    padding: 4rem;
+    margin: 2rem;
+    font-family: Akshar;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.contact-form h2 {
+font-family: Hahmlet;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 700;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.165);
+    border: 0.1rem solid rgba(255, 255, 255, 0.65);
+    border-radius: 0.8rem;
+    width: 100%; /* Garante que os inputs ocupem toda a largura do formulário */
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+}
+
+.contact-form button {
+    background-color: #F8E068;
+    padding: 10px 2rem;
+    border: 0.2rem solid #fcdb37;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    align-self: flex-start; /* Mantém o botão alinhado à esquerda */
+}
+.contact-form button:hover {
+    background-color: #F6D73C;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Akshar;
+    font-size: 1.4rem;
+    padding: 1rem;
+    gap: 15rem;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content ul {
+    list-style: none;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.footer-center {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info .fas{
+margin: 0.5rem;
+}
+
+.socials-footer {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+
+}
+
+@media (max-width: 766px) {
+
+article {
+    padding: 2rem;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Akshar;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.socials {
+    align-items: center;
+    justify-content: center;
+}
+
+.socials .fab {
+    margin: 1rem;
+}
+
+.herosection {
+    margin: 2rem;
+    font-family: Akshar;
+}
+
+.herosection-text h1 {
+    font-size: 3rem;
+}
+
+.herosection-text h2 {
+    font-size: 2rem;
+}
+
+.herosection-text p {
+    font-size: 1.5rem;
+}
+
+.btn-home {
+    border-radius: 0.5rem;
+    border: 0.1rem solid #F6D73C;
+    background: rgba(248, 224, 104, 0.80);
+    height: 4rem;
+    font-size: 1.5rem;
+}
+
+.btn-home:hover {
+    background-color: #F6D73C;
+}
+
+
+.herosection-img {
+    display: none;
+}
+
+.service-img {
+    display: none;
+}
+
+    .container-serv { 
+        margin: 2rem;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services {
+        position: relative;
+        height: 5rem; /* Ajuste o tamanho conforme necessário */
+        border: none;
+        color: #FFF;
+        font-family: Akshar, sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+
+    .service1 {
+        background: #FCC05E;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    .service2 {
+        background: #F8E068;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    .service3 {
+        background: #C1DC96;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    .service4 {
+        background: #5F84F3;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    .service5 {
+        background: #F7B1A9;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    /* Texto oculto para hover */
+    .services::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        font-size: 0.8rem;
+        color: #fff; /* Cor padrão */
+        text-align: justify;
+        line-height: 1rem;
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5rem;
+    }
+
+    .services.service1::after {
+    content: "Se você está buscando um estilo de vida mais saudável para você e seu pequeno, você veio ao lugar certo! Vamos abordar tudo sobre nutrição materno-infantil, de forma descontraída e personalizada. Sessões de 45 minutos focadas em você e seu bebê!";
+}
+
+.services.service2::after {
+    content: "Consultas completas e personalizadas para atender às necessidades nutricionais específicas de cada cliente. Juntos, criaremos estratégias para atingir seus objetivos.";
+}
+
+.services.service3::after {
+    content: "Oferecemos assessoria educacional em nutrição para escolas, com foco em promover hábitos saudáveis. Através de workshops interativos e materiais lúdicos, proporcionamos uma experiência prática e educativa para alunos e educadores, incentivando a alimentação saudável no cotidiano.";
+}
+
+.services.service4::after {
+    content: "Programas desenhados para orientar você ao longo de sua jornada nutricional, com planos práticos e suporte contínuo.";
+}
+
+.services.service5::after {
+    content: "Acompanhamento completo para garantir a evolução nutricional, ajustando estratégias conforme necessário para atingir seus objetivos de maneira eficaz.";
+}
+
+
+    /* Exibe o texto no hover */
+    .services:hover::after {
+        opacity: 1;
+    }
+
+    /* Efeito para suavizar o desaparecimento do conteúdo principal */
+    .services:hover {
+        transform: scale(0.98);
+    }
+
+    /* Título padrão */
+.service-title {
+    display: block;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição suave para o título */
+}
+
+/* Esconda o título no hover */
+.services:hover .service-title {
+    opacity: 0;
+    transform: scale(0.9); /* Reduz ligeiramente o tamanho para um efeito mais dinâmico */
+}
+
+
+.background-img {
+    display: none;
+}
+
+.sobre-mim {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7B1A9;
+    background-image: url('src/assets/img/sobre-pattern.png');
+    font-family: Akshar;
+}
+
+.sobrem {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('src/assets/img/sobre-pattern.png');
+    gap: 5rem;
+}
+
+.sobre-img {
+    width: 25rem;
+    margin: 1rem 0;
+    z-index: 2;
+}
+
+.sobrebackground-img {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+
+.sobre-text {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    z-index: 3;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    background: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(13.5px);
+    padding: 2rem;
+}
+
+.sobre-text h1 {
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Akshar;
+}
+
+.img-contato {
+    width: 50%;
+    margin: 1rem;
+}
+
+.wpp-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpp-area img {
+ width: 60%;
+}
+
+.wpp-area h1 {
+font-size: 3rem;
+}
+
+.wpp-area p {
+font-size: 1.5rem;
+}
+
+.btn-wpp {
+    border-radius: 10px;
+    background: #7ECC00;
+    height: 5rem;
+    padding: 1rem;
+    color: #FFF;
+    font-family: Akshar;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+}
+
+.btn-wpp i {
+    margin-right: 1rem;
+}
+
+.btn-wpp:hover {
+    background-color: #74a724;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
+    background-color: #F7B1A9;
+    stroke-width: 0.2rem;
+    stroke: #E9FFC7;
+    border-radius: 2rem;
+    padding: 4rem;
+    margin: 2rem;
+    font-family: Akshar;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.contact-form h2 {
+font-family: Hahmlet;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 700;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.165);
+    border: 0.1rem solid rgba(255, 255, 255, 0.65);
+    border-radius: 0.8rem;
+    width: 100%; /* Garante que os inputs ocupem toda a largura do formulário */
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+}
+
+.contact-form button {
+    background-color: #F8E068;
+    padding: 10px 2rem;
+    border: 0.2rem solid #fcdb37;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    align-self: flex-start; /* Mantém o botão alinhado à esquerda */
+}
+
+.contact-form button:hover {
+    background-color: #F6D73C;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Akshar;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.footer-content ul {
+    list-style: none;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.socials-footer i {
+    font-size: 2rem;
+}
+
+.contact-info .fas{
+margin: 0.5rem;
+}
+}
+
+
+/* Estilos para tablets */
+@media (min-width: 767px) and (max-width: 1024px) {
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Akshar;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.socials {
+    align-items: center;
+    justify-content: center;
+}
+
+.socials .fab {
+    margin: 1rem;
+}
+
+.herosection {
+    margin: 2rem;
+    font-family: Akshar;
+    font-size: 2rem;
+}
+
+.herosection-img {
+    display: none;
+}
+
+.service-img {
+    display: none;
+}
+
+.herosection h1 {
+    font-size: 3rem;
+}
+
+.herosection h2 {
+    font-size: 2.5rem;
+}
+
+.herosection p {
+    font-size: 2rem;
+}
+
+
+.btn-home {
+    border-radius: 0.5rem;
+    border: 0.1rem solid #F6D73C;
+    background: rgba(248, 224, 104, 0.80);
+    height: 5rem;
+}
+
+.btn-home:hover {
+    background-color: #F6D73C;
+}
+
+
+    .container-serv {
+        margin: 3rem;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services {
+        position: relative;
+        height: 8rem; /* Ajuste o tamanho conforme necessário */
+        border: none;
+        color: #FFF;
+        font-family: Akshar, sans-serif;
+        font-size: 2.5rem; /* Tamanho maior do que no exemplo anterior */
+        font-weight: 700;
+        line-height: normal;
+        text-align: center; /* Centraliza o título */
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centraliza o título no espaço disponível */
+        padding: 0.5rem 1rem;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        transition: transform 0.3s ease; /* Suavização de transição */
+    }
+
+    .service1 {
+        background: #FCC05E;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    .service2 {
+        background: #F8E068;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    .service3 {
+        background: #C1DC96;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    .service4 {
+        background: #5F84F3;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    .service5 {
+        background: #F7B1A9;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    /* Texto oculto para hover */
+    .services::after {
+        position: absolute;
+        top: 50%;
+        left: 10%; /* Ajusta a posição à esquerda */
+        transform: translate(0%, -50%);
+        opacity: 0; /* Inicialmente invisível */
+        visibility: hidden; /* Garantir que o texto não seja visível até o hover */
+        pointer-events: none; /* O texto não interferirá no mouse */
+        transition: opacity 0.3s ease, visibility 0s 0.3s; /* Suavizar a transição de opacidade e visibilidade */
+        font-size: 1.3rem;
+        color: #fff; /* Cor do texto */
+        text-align: left; /* Alinha o texto à esquerda */
+        line-height: 1.2;
+        width: 80%;
+        max-width: 800px;
+        padding: 1rem;
+    }
+
+    /* Especificar o conteúdo para cada serviço */
+    .services.service1::after {
+        content: "Se você está buscando um estilo de vida mais saudável para você e seu pequeno, você veio ao lugar certo! Vamos abordar tudo sobre nutrição materno-infantil, de forma descontraída e personalizada. Sessões de 45 minutos focadas em você e seu bebê!";
+    }
+
+    .services.service2::after {
+        content: "Consultas completas e personalizadas para atender às necessidades nutricionais específicas de cada cliente. Juntos, criaremos estratégias para atingir seus objetivos.";
+    }
+
+    .services.service3::after {
+        content: "Oferecemos assessoria educacional em nutrição para escolas, com foco em promover hábitos saudáveis. Através de workshops interativos e materiais lúdicos, proporcionamos uma experiência prática e educativa para alunos e educadores, incentivando a alimentação saudável no cotidiano.";
+    }
+
+    .services.service4::after {
+        content: "Programas desenhados para orientar você ao longo de sua jornada nutricional, com planos práticos e suporte contínuo.";
+    }
+
+    .services.service5::after {
+        content: "Acompanhamento completo para garantir a evolução nutricional, ajustando estratégias conforme necessário para atingir seus objetivos de maneira eficaz.";
+    }
+
+    /* Exibe o texto no hover */
+    .services:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s ease, visibility 0s; /* Exibe o texto sem delay */
+    }
+
+    /* Título padrão */
+    .service-title {
+        display: block;
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Transição suave para o título */
+    }
+
+    /* Esconda o título no hover */
+    .services:hover .service-title {
+        opacity: 0;
+        transform: scale(0.9); /* Reduz ligeiramente o tamanho para um efeito mais dinâmico */
+    }
+
+    /* Efeito de escala ao passar o mouse */
+    .services:hover {
+        transform: scale(0.98);
+    }
+
+.background-img {
+    display: none;
+}
+
+.sobre-mim {
+    gap: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7B1A9;
+    background-image: url('src/assets/img/sobre-pattern.png');
+    font-family: Akshar;
+}
+
+.sobrem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('src/assets/img/sobre-pattern.png');
+    gap: 5rem;
+}
+
+.sobre-img img {
+    width: 50%;
+}
+
+.sobre-img {
+    z-index: 2;
+}
+
+.sobre-mim {
+    font-size: 2rem;
+}
+
+.sobrebackground-img {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(45deg);
+    width: 100%;
+}
+
+.sobre-text {
+    width: 70%;
+    z-index: 3;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    background: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(13.5px);
+    padding: 2rem;
+}
+
+.contato {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Akshar;
+}
+
+.wpp-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-contato {
+    width: 20rem;
+    margin: 1rem;
+}
+
+.btn-wpp {
+    border-radius: 10px;
+    background: #7ECC00;
+    height: 5rem;
+    padding: 1rem;
+    color: #FFF;
+    font-family: Akshar;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+}
+
+.btn-wpp:hover {
+    background-color: #74a724;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
+    background-color: #F7B1A9;
+    stroke-width: 0.2rem;
+    stroke: #E9FFC7;
+    border-radius: 2rem;
+    padding: 4rem;
+    margin: 2rem;
+    font-family: Akshar;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.contact-form h2 {
+font-family: Hahmlet;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 700;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.165);
+    border: 0.1rem solid rgba(255, 255, 255, 0.65);
+    border-radius: 0.8rem;
+    width: 100%; /* Garante que os inputs ocupem toda a largura do formulário */
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+}
+
+.contact-form button {
+    background-color: #F8E068;
+    padding: 10px 2rem;
+    border: 0.2rem solid #fcdb37;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    align-self: flex-start; /* Mantém o botão alinhado à esquerda */
+}
+
+.contact-form button:hover {
+    background-color: #F6D73C;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Akshar;
+    font-size: 1.4rem;
+    gap: 5rem;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.socials-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1rem;
+}
+
+.footer-content ul {
+    list-style: none;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.contact-info .fas{
+margin: 0.5rem;
+}
+
+}
