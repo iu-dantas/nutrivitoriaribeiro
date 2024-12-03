@@ -151,8 +151,8 @@ header {
 }
 
 .btn-home a {
-    text-decoration: none;
-    color: black;
+    color: inherit;
+    text-decoration: none; 
 }
 
 .herosection-img {
@@ -377,7 +377,10 @@ header {
     transform: scale(0.9);
 }
 
-
+.sobre-mim .sobrem {
+    position: relative;
+    overflow: hidden;
+}
 
 
 .sobre-mim {
@@ -422,13 +425,6 @@ header {
 .sobre-text p {
     font-size: 2rem;
     width: 60rem;
-}
-
-.sobrebackground-img {
-    position: absolute;
-    z-index: 1;
-    transform: rotate(5deg);
-    max-width: 100%;
 }
 
 .contato {
@@ -501,6 +497,10 @@ header {
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 300;
+}
+
+select, input, textarea {
+    color: #000; /* Defina a cor de texto desejada */
 }
 
 .contact-form option {
