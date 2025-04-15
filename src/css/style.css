@@ -264,7 +264,7 @@ header {
 .services .service-container1::after {
     content: "Se você está buscando um estilo de vida mais saudável para você e seu pequeno, você veio ao lugar certo! Vamos abordar tudo sobre nutrição materno-infantil, de forma descontraída e personalizada. Sessões de 45 minutos focadas em você e seu bebê!";
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -284,7 +284,7 @@ header {
 .services .service-container2::after {
     content: "Consultas completas e personalizadas para atender às necessidades nutricionais específicas de cada cliente. Juntos, criaremos estratégias para atingir seus objetivos";
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -33%);
     color: #fff;
@@ -304,7 +304,7 @@ header {
 .services .service-container3::after {
     content: "Oferecemos assessoria educacional em nutrição para escolas, com foco em promover hábitos saudáveis. Através de workshops interativos e materiais lúdicos, proporcionamos uma experiência prática e educativa para alunos e educadores, incentivando a alimentação saudável no cotidiano.";
     position: absolute;
-    top: 80%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000000;
@@ -324,7 +324,7 @@ header {
 .services .service-container4::after {
     content: "Programas desenhados para orientar você ao longo de sua jornada nutricional, com planos práticos e suporte contínuo.";
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -344,7 +344,7 @@ header {
 .services .service-container5::after {
     content: "Acompanhamento completo para garantir a evolução nutricional, ajustando estratégias conforme necessário para atingir seus objetivos de maneira eficaz.";
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
